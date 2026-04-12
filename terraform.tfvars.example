@@ -1,0 +1,35 @@
+# ============================================================
+# terraform.tfvars.example
+# Copy this file to terraform.tfvars and fill in real values.
+# NEVER commit terraform.tfvars to source control!
+# ============================================================
+
+# --------------------------
+# Provider / Region
+# --------------------------
+aws_region = "us-east-1" # US region
+
+# --------------------------
+# Project Meta
+# --------------------------
+project_name = "aws-vpc-lambda-rds-fintech"
+environment  = "dev" # Options: dev | staging | prod
+
+# --------------------------
+# VPC Networking
+# --------------------------
+vpc_cidr = "10.0.0.0/16"
+
+# --------------------------
+# Database Credentials
+# Replace with strong, unique values before applying!
+# --------------------------
+db_username = "dbuser"      # <-- change me
+db_password = "yourdbpassword" # <-- change me (min 8 chars)
+db_name     = "fintechdb"
+
+# --------------------------
+# Lambda Tuning
+# --------------------------
+lambda_timeout     = 30  # seconds (1–900)
+lambda_memory_size = 256 # MB (128 | 256 | 512 | 1024 | 2048 | 3008)
