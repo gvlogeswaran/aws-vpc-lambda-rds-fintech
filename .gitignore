@@ -1,0 +1,93 @@
+# ============================================================
+# .gitignore for aws-vpc-lambda-rds-fintech Terraform Project
+# ============================================================
+
+# --------------------------
+# Terraform State & Lock Files
+# --------------------------
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+.terraform.lock.hcl
+
+# --------------------------
+# Terraform Working Directory
+# --------------------------
+.terraform/
+.terraform.tfplan
+
+# --------------------------
+# Terraform Variable Files (contain secrets!)
+# --------------------------
+terraform.tfvars
+*.auto.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# --------------------------
+# Lambda Deployment Packages
+# --------------------------
+*.zip
+
+# AWS credentials (if accidentally placed here)
+.aws/
+credentials
+
+# --------------------------
+# Python Artifacts
+# --------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyc
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+*.so
+.venv/
+venv/
+env/
+
+# --------------------------
+# OS-Specific Files
+# --------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# --------------------------
+# IDE & Editor Files
+# --------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# --------------------------
+# Crash & Log Files
+# --------------------------
+crash.log
+crash.*.log
+*.log
+
+# --------------------------
+# Sensitive Files
+# --------------------------
+*.pem
+*.key
+*.crt
+*.p12
+secrets.json
