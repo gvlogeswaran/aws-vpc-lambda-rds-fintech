@@ -7,7 +7,7 @@
 
 ## Architecture
 
-> *A detailed Architecture Diagram will be published shortly*
+![AWS VPC Lambda RDS Architecture](Arch_Diagram.png)
 
 ---
 
